@@ -1,0 +1,131 @@
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+#toggle-theme {
+    cursor: pointer;
+    font-size: 32px; 
+   margin-bottom: 50%;
+    /* background-color: #caa892; */
+}
+
+
+.dark-mode section{
+    background-color: black;
+}
+.dark-mode section h1{
+    color:#caa892
+
+}
+.dark-mode section h2{
+    color:#caa892
+
+}
+
+.dark-mode section h3{
+    color:#caa892
+
+}
+
+.dark-mode section p{
+    color:#caa892
+
+}
+
+.dark-mode header ul li a{
+       color:rgb(255, 200, 0)
+
+}
+.dark-mode header  ul li a:hover{
+    color:#caa892
+
+}
+.dark-mode .navList .nav-btn:hover{
+    color: #646464
+
+}
+
+
+.dark-mode .home-btn{
+    display: inline-block;
+    color:#378068;
+    font-size: 16px;
+    background-color:rgb(255, 200, 0) ;
+    padding: 10px 30px;
+    border-bottom-right-radius:15px ;
+    border-top-left-radius:15px ;
+text-decoration: none;
+transition: all .4s;}
+
+.dark-mode header.sticky{
+    background-color:rgba(0 , 0 , 0, .6);
+    padding: 14px 12%;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+    transition: all .4s;
+}
+
+
+.dark-mode input.sub-btn{
+   background-color:rgb(255, 200, 0) ;
+   color:#378068;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.dark-mode input.sub-btn:hover{
+    border-bottom-right-radius: 0px;
+}
+.dark-mode input.sub-btn:active{
+    background-color: #caa892;
+}
+.dark-mode .footer-text span{
+    width:90px;
+    height:60px;
+   background-color: #378068;
+   border-radius: 5px;
+color :rgb(255, 200, 0);}
+
+
+@media(max-width:940px){
+    .dark-mode #menu-icon{
+       display: block; 
+       color: white;
+    }
+    .dark-mode .navList{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: #212121;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 30px;
+        transition: all .4s;
+
+    }
+    /*  */
+    .dark-mode .navList a{
+        font-size: 18px;
+        color: white;
+        display: block;
+        margin: 10px 0;
+    }
+    .navList a:hover{
+        transform: translateX(-5px);
+        transition: .3s;
+    }
+    .navList.open{
+        right: 0;
+    }
+}
